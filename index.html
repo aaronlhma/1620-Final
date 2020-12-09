@@ -9,25 +9,34 @@
 </head>
 
 <body>
-    <header> <h1>Welcome to our gallery</h1></header>
+
+    <header> <h1>
+        <span> Welcome to our</span>
+        <span> gallery</span>
+    </h1></header>
+    
     <main>
     <p>Hover on any thumbnail to see it bigger</p>
     <div id="thumb-bar">
-        <img src="images/pic1.jpg" class='thumb'>
-        <img src="images/pic2.jpg" class='thumb'>
-        <img src="images/pic3.jpg" class='thumb'>
-        <img src="images/pic4.jpg" class='thumb'>
-        <img src="images/pic5.jpg" class='thumb'>
+        <img src="images/pic1.jpg" >
+        <img src="images/pic2.jpg" >
+        <img src="images/pic3.jpg" >
+        <img src="images/pic4.jpg" >
+        <img src="images/pic5.jpg" >
     </div>
+
     <div>
     <img id="displayed-img" src="images/pic5.jpg" alt="enlarged image">
     </div>
+
     <form id='form'>
     <label>What effect do you want to apply?</label>
-    <input id="effect" type="text">
-    <button type='button'>Submit</button>
+    <span><input id="effect" type="text"></span>
+    <span><button type='button'>Submit</button></span>
     </form>
+
     </main>
 </body>
+
 <script src="scripts/javascripts.js"></script>
 </html>

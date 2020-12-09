@@ -8,27 +8,33 @@
 }
 
 body{
-    font-family: Montserrat, Arial;
+    font-family: Montserrat, Arial,sans-serif;
     margin-left:auto;
     margin-right:auto;
     justify-content: center;
     text-align:center;
     width:80vw;
 }
-
-label{
-    margin:20px;
-}
-
 form{
     display:none;
 }
 .show{
-    display:block;
+    display:grid;
+    grid-template-rows:repeat(3,1fr)
+}
+h1{
+    display:grid;
+    grid-template-rows:repeat(2,1fr);
 }
 
 @media only screen and (min-width:640px){
     body{
         width:640px;
+    }
+    h1{
+        display:block;
+    }
+    .show{
+        display:inline-block;
     }
 }

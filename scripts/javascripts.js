@@ -1,6 +1,6 @@
 // loops through main images and nests them under thumb-bar
 function create_thumbBar(){
-    let x = document.getElementsByClassName('thumb');
+    let x = document.getElementsByTagName('img');
     let y = document.getElementById('thumb-bar');
     for (i=0;i<5;i++){
         y.appendChild(x[i]);
@@ -20,9 +20,23 @@ function show_buttons(){
 
 function change_effect(){
     let x = document.getElementById('effect');
+    let y = document.getElementById('displayed-img');
     if(x.value =='blur'){
-        console.log('input was blur');
+        if(y.src.indexOf('pic1')>-1){
+            y.src='images/pic1B.jpg';
+        } else if (y.src.indexOf('pic2')>-1){
+            y.src='images/pic2B.jpg';
+        } else if (y.src.indexOf('pic3')>-1){
+            y.src='images/pic3B.jpg';
+        } else if (y.src.indexOf('pic4')>-1){
+            y.src='images/pic4B.jpg';
+        } else{
+            y.src='images/pic5B.jpg';
+        }
+    } else{
+        alert('Input other than \'blur\' was entered!');
     }
+    x.value = '';
 }
 
 function main(){

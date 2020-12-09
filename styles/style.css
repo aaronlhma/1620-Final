@@ -1,9 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,800;0,900;1,500;1,700&display=swap');
-div img {
-    width: 10%;
+#thumb-bar img {
+    width: 15%;
+}
+img.displayed-img{
+    width:78%;
 }
 
 body{
     font-family: Montserrat, Arial;
-    
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: center;
+    text-align:center;
+    width:80vw;
+}
+
+label{
+    margin:20px;
+}
+
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+
+@media only screen and (min-width:640px){
+    body{
+        width:640px;
+    }
 }

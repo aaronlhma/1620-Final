@@ -4,6 +4,7 @@
 <head>
     <title> 1620 Final </title>
     <meta charset="utf-8">
+    <meta name="viewport" content ="width"='device-width'>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -12,21 +13,21 @@
     <main>
     <p>Hover on any thumbnail to see it bigger</p>
     <div id="thumb-bar">
-        <img src="images/pic1.jpg">
-        <img src="images/pic2.jpg">
-        <img src="images/pic3.jpg">
-        <img src="images/pic4.jpg">
-        <img src="images/pic5.jpg">
+        <img src="images/pic1.jpg" class='thumb'>
+        <img src="images/pic2.jpg" class='thumb'>
+        <img src="images/pic3.jpg" class='thumb'>
+        <img src="images/pic4.jpg" class='thumb'>
+        <img src="images/pic5.jpg" class='thumb'>
     </div>
     <div>
-    <img class="displayed-img" src="images/pic5.jpg" alt="enlarged image">
+    <img id="displayed-img" src="images/pic5.jpg" alt="enlarged image">
     </div>
-    <form class="show">
+    <form>
     <label>What effect do you want to apply?</label>
     <input id="effect" type="text">
     <button>Submit</button>
     </form>
     </main>
 </body>
-
+<script src="scripts/javascripts.js"></script>
 </html>

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,800;0,900;1,500;1,700&display=swap');
 #thumb-bar img {
     width: 15%;
+    display:inline-block;
 }
-img.displayed-img{
-    width:78%;
+#displayed-img{
+    width:76%;
 }
 
 body{
@@ -19,7 +20,7 @@ label{
     margin:20px;
 }
 
-.hide{
+form{
     display:none;
 }
 .show{
